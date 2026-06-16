@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Meenakshi Mumma — Happy Birthday</title>
+  <meta name="description" content="A deeply personal birthday website gift for Meenakshi Mumma." />
+  <meta property="og:title" content="For Meenakshi Mumma — Happy Birthday" />
+  <meta property="og:description" content="A deeply personal birthday website gift for Meenakshi Mumma." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2.3rem, 1.3rem + 3vw, 4.5rem);
+      --text-hero: clamp(3.2rem, 1.2rem + 6vw, 7rem);
+
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --space-24: 6rem;
+
+      --color-bg: #fff8f8;
+      --color-surface: #fffdfc;
+      --color-surface-2: #fff4f3;
+      --color-surface-offset: #fde9ea;
+      --color-border: rgba(88, 44, 61, 0.14);
+      --color-divider: rgba(88, 44, 61, 0.1);
+      --color-text: #35212c;
+      --color-text-muted: #705863;
+      --color-text-faint: #b3919e;
+      --color-text-inverse: #fffaf8;
+      --color-primary: #b44b74;
+      --color-primary-hover: #97395f;
+      --color-primary-highlight: rgba(244, 196, 213, 0.66);
+      --color-glow: rgba(240, 149, 181, 0.32);
+      --shadow-sm: 0 2px 10px rgba(102, 52, 73, 0.08);
+      --shadow-md: 0 16px 32px rgba(102, 52, 73, 0.12);
+      --shadow-lg: 0 28px 70px rgba(102, 52, 73, 0.18);
+      --radius-sm: 0.5rem;
+      --radius-md: 0.9rem;
+      --radius-lg: 1.25rem;
+      --radius-xl: 2rem;
+      --radius-full: 9999px;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Manrope', system-ui, sans-serif;
+      --content-default: 1120px;
+      --content-narrow: 760px;
+      --transition: 220ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    [data-theme="dark"] {
+      --color-bg: #1f171b;
+      --color-surface: #261d22;
+      --color-surface-2: #2d2329;
+      --color-surface-offset: #34282f;
+      --color-border: rgba(255, 233, 238, 0.12);
+      --color-divider: rgba(255, 233, 238, 0.08);
+      --color-text: #f8e8eb;
+      --color-text-muted: #d2b7c0;
+      --color-text-faint: #9a7f88;
+      --color-text-inverse: #261d22;
+      --color-primary: #f095b5;
+      --color-primary-hover: #f6abc5;
+      --color-primary-highlight: rgba(240, 149, 181, 0.14);
+      --color-glow: rgba(240, 149, 181, 0.22);
+      --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.24);
+      --shadow-md: 0 16px 32px rgba(0, 0, 0, 0.34);
+      --shadow-lg: 0 28px 70px rgba(0, 0, 0, 0.42);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      min-height: 100vh;
+      overflow-x: hidden;
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      line-height: 1.7;
+      color: var(--color-text);
+      background:
+        radial-gradient(circle at top left, rgba(240,149,181,0.14), transparent 24%),
+        radial-gradient(circle at right 20% top 10%, rgba(255,217,170,0.18), transparent 18%),
+        linear-gradient(180deg, var(--color-bg), var(--color-surface));
+      position: relative;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 10% 20%, var(--color-glow), transparent 16%),
+        radial-gradient(circle at 84% 18%, rgba(255,220,186,0.18), transparent 14%),
+        radial-gradient(circle at 75% 78%, rgba(240,149,181,0.12), transparent 18%);
+      z-index: -2;
+    }
+    img, svg { display: block; max-width: 100%; }
+    button, a { transition: transform var(--transition), box-shadow var(--transition), color var(--transition), background var(--transition), border-color var(--transition); }
+    a { color: inherit; }
+    button { font: inherit; border: 0; background: none; cursor: pointer; }
+    :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; border-radius: var(--radius-sm); }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+    .skip-link {
+      position: absolute; left: var(--space-4); top: -50px; background: var(--color-primary); color: white;
+      padding: var(--space-3) var(--space-4); border-radius: var(--radius-full); z-index: 100;
+    }
+    .skip-link:focus { top: var(--space-4); }
+    .container { width: min(calc(100% - 2rem), var(--content-default)); margin: 0 auto; }
+    .narrow { width: min(calc(100% - 2rem), var(--content-narrow)); margin: 0 auto; }
+
+    .heart-particles {
+      position: fixed;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: -1;
+    }
+    .heart-particles span {
+      position: absolute;
+      bottom: -2rem;
+      color: rgba(180, 75, 116, 0.16);
+      font-size: clamp(0.8rem, 1vw, 1.2rem);
+      animation: floatHeart linear infinite;
+      filter: drop-shadow(0 0 10px rgba(240,149,181,0.15));
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      backdrop-filter: blur(14px);
+      background: color-mix(in srgb, var(--color-bg) 86%, transparent);
+      border-bottom: 1px solid var(--color-divider);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 72px;
+      gap: var(--space-4);
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-3);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--color-primary-highlight), var(--color-surface-offset));
+      box-shadow: var(--shadow-sm);
+      color: var(--color-primary);
+      flex-shrink: 0;
+    }
+    .brand span {
+      font-size: var(--text-sm);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+    }
+    .icon-btn, .pill-btn {
+      min-width: 44px;
+      min-height: 44px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--color-border);
+      color: var(--color-text);
+      background: color-mix(in srgb, var(--color-surface) 88%, transparent);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+    .pill-btn {
+      padding: 0 var(--space-4);
+      font-size: var(--text-sm);
+      font-weight: 700;
+      gap: var(--space-2);
+    }
+    .icon-btn:hover, .pill-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .hero {
+      padding: clamp(var(--space-12), 10vw, var(--space-24)) 0 var(--space-12);
+      position: relative;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: var(--space-8);
+      align-items: center;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      padding: var(--space-2) var(--space-4);
+      border-radius: var(--radius-full);
+      background: var(--color-primary-highlight);
+      color: var(--color-primary);
+      font-size: var(--text-xs);
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: var(--space-5);
+    }
+    h1, h2, h3 {
+      font-family: var(--font-display);
+      line-height: 1.08;
+    }
+    h1 {
+      font-size: var(--text-hero);
+      max-width: 11ch;
+      text-wrap: balance;
+    }
+    .hero p {
+      font-size: var(--text-lg);
+      color: var(--color-text-muted);
+      max-width: 35ch;
+      margin-top: var(--space-5);
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      margin-top: var(--space-6);
+    }
+    .btn-primary, .btn-secondary {
+      min-height: 48px;
+      padding: 0 var(--space-5);
+      border-radius: var(--radius-full);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--text-sm);
+      font-weight: 800;
+    }
+    .btn-primary {
+      background: var(--color-primary);
+      color: var(--color-text-inverse);
+      box-shadow: var(--shadow-md);
+    }
+    .btn-primary:hover {
+      background: var(--color-primary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 18px 35px rgba(180, 75, 116, 0.24);
+    }
+    .btn-secondary {
+      border: 1px solid var(--color-border);
+      background: var(--color-surface);
+    }
+    .btn-secondary:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .hero-card {
+      background: linear-gradient(180deg, color-mix(in srgb, var(--color-surface) 92%, white), var(--color-surface-2));
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: var(--space-4);
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: auto -15% -25% auto;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(240,149,181,0.26), transparent 70%);
+      z-index: 0;
+    }
+    .hero-photo-wrap {
+      position: relative;
+      aspect-ratio: 4 / 5;
+      border-radius: calc(var(--radius-xl) - var(--space-1));
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(53, 33, 44, 0.18);
+      background: var(--color-surface-offset);
+    }
+    .hero-photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.01);
+    }
+    .hero-photo-wrap::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(31,20,27,0.02), rgba(31,20,27,0.34));
+    }
+    .photo-note {
+      position: absolute;
+      left: var(--space-4);
+      right: var(--space-4);
+      bottom: var(--space-4);
+      z-index: 1;
+      background: rgba(255,255,255,0.72);
+      color: #5a3242;
+      padding: var(--space-3) var(--space-4);
+      border-radius: var(--radius-lg);
+      backdrop-filter: blur(8px);
+      font-size: var(--text-sm);
+      font-weight: 700;
+      box-shadow: var(--shadow-sm);
+    }
+
+    section { padding: var(--space-10) 0; }
+    .section-title { font-size: var(--text-2xl); margin-bottom: var(--space-3); }
+    .section-copy { color: var(--color-text-muted); max-width: 60ch; margin-bottom: var(--space-6); }
+
+    .reasons-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--space-4);
+    }
+    .card {
+      position: relative;
+      background: color-mix(in srgb, var(--color-surface) 94%, transparent);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5);
+      box-shadow: var(--shadow-sm);
+      content-visibility: auto;
+      overflow: hidden;
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(240,149,181,0.12), transparent 45%);
+      opacity: 0;
+      transition: opacity var(--transition);
+      pointer-events: none;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+    .card:hover::before { opacity: 1; }
+    .card h3 { font-size: var(--text-xl); margin-bottom: var(--space-3); }
+    .card p { color: var(--color-text-muted); }
+    .card .number {
+      font-size: var(--text-xs);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-primary);
+      font-weight: 800;
+      margin-bottom: var(--space-3);
+    }
+
+    .timeline { display: grid; gap: var(--space-4); }
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: var(--space-4);
+      align-items: start;
+      padding: var(--space-5);
+      border-radius: var(--radius-lg);
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-sm);
+    }
+    .timeline-item:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+    .timeline-year {
+      font-size: var(--text-sm);
+      font-weight: 800;
+      color: var(--color-primary);
+      padding-top: var(--space-1);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .timeline-item h3 { font-size: var(--text-lg); margin-bottom: var(--space-2); }
+    .timeline-item p { color: var(--color-text-muted); }
+
+    .letter-wrap {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: var(--space-6);
+      align-items: stretch;
+    }
+    .letter-aside, .letter-main {
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--color-border);
+      overflow: hidden;
+      background: var(--color-surface);
+      box-shadow: var(--shadow-sm);
+    }
+    .letter-aside {
+      padding: var(--space-6);
+      background: linear-gradient(180deg, var(--color-surface-offset), var(--color-surface));
+    }
+    .quote { font-family: var(--font-display); font-size: var(--text-xl); margin-bottom: var(--space-4); }
+    .mini-list { display: grid; gap: var(--space-3); color: var(--color-text-muted); }
+    .mini-list div { padding-bottom: var(--space-3); border-bottom: 1px solid var(--color-divider); }
+    .letter-main { padding: clamp(var(--space-5), 4vw, var(--space-8)); }
+    .letter-paper {
+      padding: clamp(var(--space-5), 4vw, var(--space-8));
+      border-radius: var(--radius-lg);
+      background: linear-gradient(180deg, rgba(255,255,255,0.88), rgba(255,249,245,0.96));
+      min-height: 100%;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
+    }
+    .letter-paper p + p { margin-top: var(--space-4); }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-4);
+    }
+    .gallery-card {
+      position: relative;
+      min-height: 280px;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      background: var(--color-surface);
+      box-shadow: var(--shadow-sm);
+    }
+    .gallery-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .gallery-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .gallery-card figcaption {
+      position: absolute;
+      left: var(--space-4);
+      right: var(--space-4);
+      bottom: var(--space-4);
+      padding: var(--space-3) var(--space-4);
+      background: rgba(255,255,255,0.76);
+      color: #4f3140;
+      border-radius: var(--radius-lg);
+      backdrop-filter: blur(8px);
+      font-size: var(--text-sm);
+      font-weight: 700;
+    }
+    .gallery-placeholder {
+      display: grid;
+      place-items: center;
+      min-height: 280px;
+      text-align: center;
+      padding: var(--space-6);
+      background: linear-gradient(135deg, var(--color-surface-offset), var(--color-surface));
+      color: var(--color-text-muted);
+    }
+    .gallery-placeholder span {
+      display: inline-flex;
+      padding: var(--space-2) var(--space-4);
+      background: var(--color-primary-highlight);
+      border-radius: var(--radius-full);
+      color: var(--color-primary);
+      font-size: var(--text-xs);
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: var(--space-3);
+    }
+
+    .final-note {
+      text-align: center;
+      padding: var(--space-16) 0 var(--space-20);
+    }
+    .final-note .badge {
+      display: inline-flex;
+      padding: var(--space-2) var(--space-4);
+      border-radius: var(--radius-full);
+      background: var(--color-primary-highlight);
+      color: var(--color-primary);
+      font-size: var(--text-xs);
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: var(--space-4);
+    }
+    .final-note h2 { font-size: var(--text-2xl); margin-bottom: var(--space-4); }
+    .final-note p { color: var(--color-text-muted); max-width: 52ch; margin: 0 auto; }
+
+    footer {
+      border-top: 1px solid var(--color-divider);
+      padding: var(--space-6) 0 var(--space-10);
+      color: var(--color-text-muted);
+      font-size: var(--text-sm);
+    }
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      flex-wrap: wrap;
+    }
+
+    [data-reveal] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 800ms ease, transform 800ms ease;
+      will-change: opacity, transform;
+    }
+    [data-reveal].is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes floatHeart {
+      0% { transform: translateY(0) scale(1); opacity: 0; }
+      15% { opacity: 1; }
+      100% { transform: translateY(-120vh) scale(1.25); opacity: 0; }
+    }
+
+    @media (max-width: 920px) {
+      .hero-grid, .letter-wrap, .gallery-grid { grid-template-columns: 1fr; }
+      .reasons-grid { grid-template-columns: 1fr; }
+      h1 { max-width: 12ch; }
+    }
+
+    @media (max-width: 640px) {
+      .header-inner { min-height: 64px; }
+      .pill-btn span { display: none; }
+      .hero { padding-top: var(--space-10); }
+      .hero p { font-size: var(--text-base); }
+      .timeline-item { grid-template-columns: 1fr; }
+      .timeline-year { padding-top: 0; }
+      .hero-photo-wrap { aspect-ratio: 5 / 6; }
+      .photo-note, .gallery-card figcaption { left: var(--space-3); right: var(--space-3); bottom: var(--space-3); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+      [data-reveal] { opacity: 1; transform: none; }
+      .heart-particles { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="heart-particles" aria-hidden="true">
+    <span style="left:6%; animation-duration:16s; animation-delay:0s;">❤</span>
+    <span style="left:14%; animation-duration:19s; animation-delay:5s;">❤</span>
+    <span style="left:28%; animation-duration:15s; animation-delay:2s;">❤</span>
+    <span style="left:42%; animation-duration:18s; animation-delay:8s;">❤</span>
+    <span style="left:56%; animation-duration:21s; animation-delay:1s;">❤</span>
+    <span style="left:68%; animation-duration:17s; animation-delay:6s;">❤</span>
+    <span style="left:82%; animation-duration:20s; animation-delay:3s;">❤</span>
+    <span style="left:92%; animation-duration:14s; animation-delay:9s;">❤</span>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="24" height="24" fill="none">
+            <path d="M24 41s-12-7.7-12-18.1C12 17 15.6 13 20.6 13c2.8 0 4.8 1.2 6.4 3.3 1.6-2.1 3.6-3.3 6.4-3.3C38.4 13 42 17 42 22.9 42 33.3 30 41 24 41Z" fill="currentColor"/>
+            <path d="M12.2 18.8C10 16.6 7 16 4.6 17.1c1.7 0.6 3.7 2.3 4.9 4.5 1.3 2.4 1.6 4.7 1.1 6.5 2.8-1.4 4.4-5.9 1.6-9.3Z" fill="currentColor" opacity="0.22"/>
+          </svg>
+        </div>
+        <div>
+          <strong style="display:block; font-size: var(--text-sm);">For Meenakshi Mumma</strong>
+          <span>Birthday gift website</span>
+        </div>
+      </a>
+      <div class="header-actions">
+        <a class="pill-btn" href="#letter"><span>Open letter</span></a>
+        <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div data-reveal>
+          <div class="eyebrow">For Meenakshi Mumma ❤️</div>
+          <h1>Happy Birthday Meenakshi Mumma ❤️</h1>
+          <p>To the woman whose love built our home, shaped my life, and made every challenge easier.</p>
+          <div class="hero-actions">
+            <a class="btn-primary" href="#letter">Read your letter</a>
+            <a class="btn-secondary" href="#memories">See the memories</a>
+          </div>
+        </div>
+
+        <div class="hero-card" data-reveal>
+          <figure class="hero-photo-wrap">
+            <img src="./Mumma.png" alt="A photo of Divyansh with Meenakshi Mumma" width="900" height="1125" loading="eager" />
+            <figcaption class="photo-note">Happy Birthday Meenakshi Mumma ❤️</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="reasons">
+      <div class="container">
+        <h2 class="section-title" data-reveal>Three reasons your love defines our world.</h2>
+        <p class="section-copy" data-reveal>There are countless reasons to celebrate you, but these are the ones that live in our hearts every single day.</p>
+        <div class="reasons-grid">
+          <article class="card" data-reveal>
+            <div class="number">01</div>
+            <h3>Unconditional Love</h3>
+            <p>Your love has always felt steady, patient, and complete. No matter what life looked like, your care made it easier to breathe, heal, and begin again.</p>
+          </article>
+          <article class="card" data-reveal>
+            <div class="number">02</div>
+            <h3>Strength and Sacrifice</h3>
+            <p>So much of what you have done came quietly through sacrifice. You gave your energy, your time, your comfort, and your strength so your family could stand taller.</p>
+          </article>
+          <article class="card" data-reveal>
+            <div class="number">03</div>
+            <h3>The Heart of Our Family</h3>
+            <p>You are the warmth in our home, the calm in difficult moments, and the person who keeps everyone connected through love, wisdom, and presence.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="memories">
+      <div class="narrow">
+        <h2 class="section-title" data-reveal>A lifetime of your love.</h2>
+        <p class="section-copy" data-reveal>This is not just a timeline of moments — it is a reminder of how deeply your love has shaped every part of my life.</p>
+        <div class="timeline">
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-year">Childhood</div>
+            <div>
+              <h3>Every memory feels safer because of you</h3>
+              <p>When I think of childhood, I think of comfort, protection, and the feeling that no matter what happened, you were there making everything feel secure again.</p>
+            </div>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-year">Every success</div>
+            <div>
+              <h3>Your support lives inside every achievement</h3>
+              <p>Every milestone I reach carries your effort within it, because behind every success was your encouragement, your belief, and the strength you gave me.</p>
+            </div>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-year">Hard times</div>
+            <div>
+              <h3>You made difficult days easier to survive</h3>
+              <p>Whenever life felt heavy, your words, your presence, and your quiet courage made even the hardest moments feel possible to get through.</p>
+            </div>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-year">Today</div>
+            <div>
+              <h3>Today we celebrate the amazing person you are</h3>
+              <p>Today is about honoring your kindness, your strength, and the beautiful way you continue to hold this family together with love.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="letter">
+      <div class="container letter-wrap">
+        <aside class="letter-aside" data-reveal>
+          <p class="quote">“Your love has been the quiet force behind so much of my strength, hope, and happiness.”</p>
+          <div class="mini-list" aria-label="Highlights">
+            <div><strong>Who you are:</strong> My guide, my protector, and one of the greatest blessings in our family.</div>
+            <div><strong>What today means:</strong> A chance to celebrate the woman whose love has shaped all of us.</div>
+            <div><strong>What I wish for you:</strong> Health, happiness, peace, and a long beautiful life filled with love.</div>
+          </div>
+        </aside>
+        <div class="letter-main" data-reveal>
+          <div class="letter-paper">
+            <h2 class="section-title">A letter for Meenakshi Mumma.</h2>
+            <p>Dear Meenakshi Mumma,</p>
+            <p>Happy Birthday. On your special day, I wanted to make something that could stay with you — a small place made with love, where my gratitude for you could be written properly and where you could always come back and feel how deeply you are loved.</p>
+            <p>Thank you for everything you have done for me and for our family. A mother gives in ways the world does not always see. She sacrifices comfort, time, rest, and peace of mind so that her family can feel safe, supported, and loved. You have done that with strength and grace, again and again, and I will never take that for granted.</p>
+            <p>You have been my guide when I did not know which direction to take, my protector when life felt uncertain, my teacher through your words and your example, and my source of strength when things became difficult. So much of who I am has been shaped by your love, your values, and the way you have always stood by me.</p>
+            <p>You mean so much not only to me, but to our whole family. Your presence brings warmth into our home, your care keeps people together, and your love leaves a deep mark on everyone lucky enough to receive it. You make life better simply by being in it.</p>
+            <p>On your birthday, I pray that life gives you back the same goodness you have given others. I wish you health that stays strong, happiness that grows every year, peace in your heart, beautiful moments with family, and a long life filled with love, dignity, and joy.</p>
+            <p>Thank you for being you, for loving so selflessly, and for being one of the greatest blessings of my life.</p>
+            <p>With all my love,<br /><strong>Divyansh ❤️</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <h2 class="section-title" data-reveal>Our Memories Together</h2>
+        <p class="section-copy" data-reveal>This section starts with one of our favorite moments together, and it is ready for more memories to be added whenever I want to grow this gift.</p>
+        <div class="gallery-grid">
+          <figure class="gallery-card" data-reveal>
+            <img src="./Mumma.png" alt="Divyansh with Meenakshi Mumma together" width="900" height="1125" loading="lazy" />
+            <figcaption>A memory I’ll always hold close — me with Meenakshi Mumma.</figcaption>
+          </figure>
+          <div class="gallery-card gallery-placeholder" data-reveal>
+            <div>
+              <span>Ready for more photos</span>
+              <p>Add more images here later by duplicating this gallery card and changing the image source and caption.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-note">
+      <div class="narrow" data-reveal>
+        <div class="badge">Made especially for Meenakshi Mumma</div>
+        <h2>Happy Birthday, Meenakshi Mumma ❤️</h2>
+        <p>Your love leaves a permanent mark on everyone around you. It lives in our home, in our memories, in our strength, and in the way we have learned from your kindness what real love looks like.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>Crafted with love for Meenakshi Mumma.</div>
+      <div>A birthday gift made to be opened again and again.</div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const toggle = document.querySelector('[data-theme-toggle]');
+      let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
+      function renderIcon(nextTheme) {
+        return nextTheme === 'dark'
+          ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>'
+          : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>';
+      }
+
+      function applyTheme(value) {
+        root.setAttribute('data-theme', value);
+        toggle.setAttribute('aria-label', value === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+        toggle.innerHTML = renderIcon(value);
+      }
+
+      applyTheme(theme);
+      toggle.addEventListener('click', function () {
+        theme = theme === 'dark' ? 'light' : 'dark';
+        applyTheme(theme);
+      });
+
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!reduceMotion) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add('is-visible');
+          });
+        }, { threshold: 0.14 });
+
+        document.querySelectorAll('[data-reveal]').forEach((el) => observer.observe(el));
+      } else {
+        document.querySelectorAll('[data-reveal]').forEach((el) => el.classList.add('is-visible'));
+      }
+    })();
+  </script>
+</body>
+</html>
